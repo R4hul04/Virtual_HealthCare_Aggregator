@@ -6,15 +6,15 @@ model through data cleaning, feature extraction, and preprocessing, the project 
 
 ![VHCA](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/575be275-788e-49a6-8a87-26d0318486eb)
 
-Locating nearby hospitals/clinics to users location
+#Locating nearby hospitals/clinics to users location
 
 ![Location](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/9427fbe8-14b7-455f-aa45-e7303aac7a41)
 
-Login for users
+#Login for users
 
 ![Login](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/d0efa182-0408-442c-be62-832808a2640a)
 
-Payment gateaway for doctor's appointment
+#Payment gateaway for doctor's appointment
 
 ![Payment](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/f5f21ffa-2fc2-49f1-bfae-c55a33054dc8)
 
