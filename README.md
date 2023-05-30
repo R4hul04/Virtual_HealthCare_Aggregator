@@ -1,5 +1,4 @@
 # Virtual_HealthCare_Aggregator
-# Virtual_HealthCare_Aggregator
 The overarching goal of the Virtual Healthcare Aggregator project is to provide users with a comprehensive web application that facilitates virtual 
 healthcare services. By implementing video calling capabilities, improving appointment scheduling efficiency, and enhancing the accuracy of the prediction
 model through data cleaning, feature extraction, and preprocessing, the project aims to deliver a user-friendly and reliable virtual healthcare solution.
