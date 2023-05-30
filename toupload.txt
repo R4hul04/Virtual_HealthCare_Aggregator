@@ -1,0 +1,5 @@
+plugins/fontawesome
+css/bootstrap-datetimepicker.min.css
+plugins/select2
+plugins/fancybo
+assets/img

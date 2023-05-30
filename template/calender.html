@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calendar App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="static/calendar.css">
+</head>
+
+<body>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="instructions">
+                <h1 class="text-center">CALENDER FOR APPOINTMENT</h1>
+                <p>
+                   
+                    <ul>
+                        <li>Any appointment can be made for the current day or for a future date.</li>
+                        <li>No two appointments will overlap. </li>
+                        <li>Appointments can be edited and deleted.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="calendar col-md-8 offset-md-2">
+                <div>
+                    <div class="card-header bg-primary">
+                        <ul>
+                            <li id="month" class="text-white text-uppercase text-center">
+                            </li>
+                            <li id="year" class="text-white text-uppercase text-center">
+                            </li>
+                        </ul>
+                    </div>
+                    <table class="table calendar table-bordered table-responsive-sm" id="calendar">
+                        <thead>
+                            <tr class="weekdays bg-dark">
+                              <th scope="col" class="text-white text-center">Mo</th>
+                              <th scope="col" class="text-white text-center">Tu</th>
+                              <th scope="col" class="text-white text-center">We</th>
+                              <th scope="col" class="text-white text-center">Th</th>
+                              <th scope="col" class="text-white text-center">Fr</th>
+                              <th scope="col" class="text-white text-center">Sa</th>
+                              <th scope="col" class="text-white text-center">Su</th>
+                            </tr>
+                          </thead>
+                        <tbody class="days bg-light" id="days"></tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br><hr>
+
+        <div class="row">
+            <div class="col offset-md-1">
+                <form id="form_create_appointment">
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <label class="required">Date</label>
+                            <input class="form-control date-input" type="text" id="date" data-trigger="hover" data-toggle="popover" title="Date" data-content="You can select any date from today clicking on the number in the calendar" required>
+                        </div>
+                        <div class="col form-group">
+                            <label>Description</label>
+                            <input class="form-control" type="text" id="description">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <label class="required">Start Time</label>
+                            <input class="form-control time-input" type="text" id="start_time" required>
+                        </div>
+                        <div class="col form-group">
+                            <label class="required">End Time</label>
+                            <input class="form-control time-input" type="text" id="end_time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <button type="button" class="btn btn-warning btn-block" id="clear" onclick="clear_input()">Clear Form</button>
+                        </div>
+                        <div class="col form-group">
+                            <button type="button" class="btn btn-primary btn-block" id="submit" onclick="make_appointment()" disabled="disabled">Make Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col offset-md-1">
+                <div class="row">
+                    <div class="col">
+                        <h3>Appointments</h3>
+                    </div>
+                    <div class="col form-group">
+                        <button type="button" class="btn btn-danger btn-block" id="btn_clear_storage" onclick="clear_storage()">Clear Appointments</button>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover table-striped table-sm" id="appointment_list">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center align-middle">Date</th>
+                            <th scope="col" class="text-center align-middle">Description</th>
+                            <th scope="col" class="text-center align-middle">Start time</th>
+                            <th scope="col" class="text-center align-middle">End time</th>
+                            <th scope="col" class="text-center align-middle">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br><br>
+        <blockquote class="blockquote text-center">
+            <!--<p class="mb-0">Made with:
+                <a href="https://getbootstrap.com/">Bootstrap</a>,
+                Javascript,
+                <a href="https://jquery.com/">Jquery</a>,
+                <a href="https://robinherbots.github.io/Inputmask/">Inputmask</a>,
+                <a href="http://izitoast.marcelodolce.com/">iziToast</a> and
+                <a href="https://fontawesome.com/">Fontawesome</a>
+            </p>
+            <footer class="blockquote-footer">
+                Guilherme Felix da Silva Maciel
+                <a href="https://github.com/guifelix/vanhack_calendar_javascript">
+                    <i class="fab fa-github"></i>
+                </a>
+            </footer>
+            <footer class="blockquote-footer">Please, if you're rendering inside hackerrank, try rendering on a new tab for optimize experience</footer>-->
+        </blockquote>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <script src="static/calendar.js"></script>
+
+</body>
+</html>
