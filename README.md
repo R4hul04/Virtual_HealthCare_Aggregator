@@ -4,7 +4,11 @@ healthcare services. By implementing video calling capabilities, improving appoi
 model through data cleaning, feature extraction, and preprocessing, the project aims to deliver a user-friendly and reliable virtual healthcare solution.
 
 
-![VHCA](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/575be275-788e-49a6-8a87-26d0318486eb)
+![VHCPimg](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/c6f523a1-214e-4160-9204-0ce908952e2b)
+
+![VHCPimg1](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/6ff7fdeb-a457-4c71-896d-31eeb2ee560f)
+
+
 
 # Locating nearby hospitals/clinics to users location
 
