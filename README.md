@@ -12,7 +12,7 @@ model through data cleaning, feature extraction, and preprocessing, the project 
 
 # Locating nearby hospitals/clinics to users location
 
-![Location](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/9427fbe8-14b7-455f-aa45-e7303aac7a41)
+![VHCPimg2](https://github.com/R4hul04/Virtual_HealthCare_Aggregator/assets/78637928/eeb26a5e-5524-4d93-b2de-afafb5272bb4)
 
 # Login for users
 
